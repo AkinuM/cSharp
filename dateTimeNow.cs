@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -57,10 +57,58 @@ namespace DataTimeNow
 			Counting(dateTime, "HH");
 			Counting(dateTime, "mm");
 			Counting(dateTime, "ss");
+			for (int i = 0; i < 10; i++)
+			{
+				if (i != 9)
+				{
+					Console.Write(i);
+					Console.Write(" ");
+				}
+				else
+				{
+					Console.WriteLine(i);
+				}
+			}
+			for (int i = 0; i < 10; i++)
+			{
+				if (i != 9)
+				{
+					Console.Write("^");
+					Console.Write(" ");
+				}
+				else
+				{
+					Console.WriteLine("^");
+				}
+			}
+			for (int i = 0; i < 10; i++)
+			{
+				if (i != 9)
+				{
+					Console.Write("|");
+					Console.Write(" ");
+				}
+				else
+				{
+					Console.WriteLine("|");
+				}
+			}
 			output();
-			DateTime newDateTime = DateTime.Now.AddHours(-12);
+			for (int i = 0; i < 19; i++)
+			{
+				if (i != 18)
+				{
+					Console.Write("-");
+				}
+				else
+				{
+					Console.WriteLine("-");
+				}
+			}
+			DateTime newDateTime = DateTime.Now;
 			if (int.Parse(DateTime.Now.ToString("HH")) > 11)
 			{
+				newDateTime.AddHours(-12);
 				Console.Write(newDateTime.ToString("HH:mm:ss "));
 				Console.Write("PM ");
 				Console.WriteLine(newDateTime.ToString("yy.MM.dd"));
@@ -77,6 +125,42 @@ namespace DataTimeNow
 			Counting(newDateTime, "HH");
 			Counting(newDateTime, "mm");
 			Counting(newDateTime, "ss");
+			for (int i = 0; i < 10; i++)
+			{
+				if (i != 9)
+				{
+					Console.Write(i);
+					Console.Write(" ");
+				}
+				else
+				{
+					Console.WriteLine(i);
+				}
+			}
+			for (int i = 0; i < 10; i++)
+			{
+				if (i != 9)
+				{
+					Console.Write("^");
+					Console.Write(" ");
+				}
+				else
+				{
+					Console.WriteLine("^");
+				}
+			}
+			for (int i = 0; i < 10; i++)
+			{
+				if (i != 9)
+				{
+					Console.Write("|");
+					Console.Write(" ");
+				}
+				else
+				{
+					Console.WriteLine("|");
+				}
+			}
 			output();
 		}
 	}
