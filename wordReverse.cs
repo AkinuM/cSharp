@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,10 +33,11 @@ namespace laba2
 			{
 				result[str.Length - i - wordLength - 2 + k] = str[i + k];
 			}
-			for (i = 0; i < str.Length; i++)
+			for (i = 0; i < str.Length - 1; i++)
 			{
 				Console.Write(result[i]);
 			}
+			Console.WriteLine(result[str.Length - 1]);
 		}
 	}
 }
