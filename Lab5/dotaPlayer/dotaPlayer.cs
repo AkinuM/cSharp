@@ -55,5 +55,7 @@ namespace dotaPlayer
 				return false;
 			}
 		}
+		
+		protected void standAfk();
 	}
 }
