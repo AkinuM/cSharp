@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
 namespace dotaPlayer
 {
-	class SteamUser
+	class SteamUser : IComparable, ISteamUser
 	{
 		protected string profileName;
 		protected string realName;
@@ -132,7 +132,7 @@ namespace dotaPlayer
 			}
 		}
 
-		private void Registration()
+		void Registration()
 		{
 			countUsers++;
 			steamID = countUsers;
@@ -227,6 +227,23 @@ namespace dotaPlayer
 		public SteamUser()
 		{
 			Registration();
+		}
+
+		public int CompareTo(object user)
+		{
+			SteamUser tempUser = (SteamUser) user;
+			if (countFriends == tempUser.countFriends)
+			{
+				return 0;
+			}
+			else if (countFriends > tempUser.countFriends)
+			{
+				return 1;
+			}
+			else
+			{
+				return -1;
+			}
 		}
 	}
 }
