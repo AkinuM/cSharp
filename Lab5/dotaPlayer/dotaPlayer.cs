@@ -56,6 +56,6 @@ namespace dotaPlayer
 			}
 		}
 		
-		protected void standAfk();
+		protected abstract void standAfk();
 	}
 }
