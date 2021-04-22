@@ -60,7 +60,7 @@ namespace dotaPlayer
 			}
 		}
 
-		private void standAfk()
+		private override void standAfk()
 		{
 			Console.WriteLine("End game pls");
 		}
