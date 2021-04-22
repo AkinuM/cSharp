@@ -1,0 +1,7 @@
+D:\ИСП\dotaPlayer\bin\Debug\dotaPlayer.exe.config
+D:\ИСП\dotaPlayer\bin\Debug\dotaPlayer.exe
+D:\ИСП\dotaPlayer\bin\Debug\dotaPlayer.pdb
+D:\ИСП\dotaPlayer\obj\Debug\dotaPlayer.csprojAssemblyReference.cache
+D:\ИСП\dotaPlayer\obj\Debug\dotaPlayer.csproj.CoreCompileInputs.cache
+D:\ИСП\dotaPlayer\obj\Debug\dotaPlayer.exe
+D:\ИСП\dotaPlayer\obj\Debug\dotaPlayer.pdb
