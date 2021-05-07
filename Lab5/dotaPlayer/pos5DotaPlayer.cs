@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace dotaPlayer
 {
@@ -54,7 +54,7 @@ namespace dotaPlayer
 			Console.WriteLine($"You give {count} tangos pos1");
 		}
 
-		private void standAfk()
+		public override void standAfk()
 		{
 			Console.WriteLine("GG WP");
 		}
