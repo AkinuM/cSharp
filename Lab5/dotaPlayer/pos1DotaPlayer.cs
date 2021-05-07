@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace dotaPlayer
 {
@@ -60,7 +60,7 @@ namespace dotaPlayer
 			}
 		}
 
-		private void standAfk()
+		public override void standAfk()
 		{
 			Console.WriteLine("So bad team");
 		}
