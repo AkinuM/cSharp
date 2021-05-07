@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace dotaPlayer
 {
@@ -55,7 +55,10 @@ namespace dotaPlayer
 				return false;
 			}
 		}
-		
-		protected void standAfk();
+
+		public virtual void standAfk()
+		{
+			Console.WriteLine("Good game");
+		}
 	}
 }
