@@ -60,5 +60,22 @@ namespace dotaPlayer
 		{
 			Console.WriteLine("Good game");
 		}
+		
+		public delegate void chat();
+
+		public void writeToChat(chat writeMessage)
+		{
+			Console.Write($"{profileName}: ");
+			writeMessage?.Invoke();
+		}
+
+		public delegate void game();
+
+		public event game endGame;
+
+		public void endGameMessage()
+		{
+			Console.WriteLine("Game was over");
+		}
 	}
 }
