@@ -6,6 +6,7 @@ namespace dotaPlayer
 	{
 		public override void playGame(string changeHero, string changeLine)
 		{
+			endGame += endGameMessage;
 			hero = changeHero;
 			line = changeLine;
 			while (true)
