@@ -25,6 +25,8 @@ namespace dotaPlayer
 			//ert.playGame("Lina", "Middle");
 			dotaPlayer bnm = new pos1DotaPlayer();
 			bnm.playGame("1", "2");
+			dotaPlayer.chat message = writeMessage;
+			bnm.writeToChat(message);
 		}
 	}
 }
